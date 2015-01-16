@@ -1,0 +1,43 @@
+<ion-view title="Registro">
+  <ion-content class="signup-page content-bg has-header" scroll="false" >
+  	<div class="logo"></div>
+  	<form name="signupForm" novalidate="" ng-submit="registerUser(signupForm)">
+	  	<div class="list">
+		  <label class="item item-input username">
+		    <input type="text" placeholder="Nombre" ng-model="userreg.name" required="required">
+		    
+		  	</label>
+		  	<label class="item item-input username" ng-class="{ 'has-error' : signupForm.surname.$invalid}">
+		    <input type="text" placeholder="Apellidos" ng-model="userreg.surname" name="surname" required>
+		   
+		  	</label>
+			<div class="form-errors" ng-messages="signupForm.surname.$error" ng-messages-include="templates/form-errors.html">
+                <div class="form-error" ng-message="maxlength">This field is must be less than 10 characters</div>
+          	</div>
+		  	<label class="item item-input email">
+		    <input type="email" placeholder="Email" ng-model="userreg.username" required>
+		    
+		  	</label>
+
+		  	<label class="item item-input lock">
+		    <input type="password" placeholder="Password" ng-model="userreg.password" required>
+		    
+		  	</label>
+		  	
+		</div>
+	
+	
+	<button class="button button-blue" ng-click="registerUser(userreg)">
+			REGISTRAR
+	</button>
+	
+	<button class="button button-twitter icon ion-social-twitter hide-on-keyboard-open" ng-click="authenticate('twitter')">
+		REGISTRAR USANDO TWITTER
+	</button>
+	<button class="button button-positive" ng-click="navigateTo('login')">
+			LOGIN
+	</button>
+</form>
+			
+  </ion-content>
+</ion-view>

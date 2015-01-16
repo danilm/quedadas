@@ -1,0 +1,59 @@
+<ion-view view-title="Quedada">
+   <ion-content class="has-header">
+  	<div class="list card">
+      <div class="item item-avatar">
+        <img ng-src="img/sports/{{qdd.picture}}">
+        <h3 class="positive">{{qdd.sport | capitalize}}</h3>
+        <h2><i class="icon ion-clock">&nbsp;&nbsp;</i>{{qdd.fecha | dateToISO | date:'dd-MM-yyyy'}} {{qdd.hora}}</h2>
+        <h2 class="calm">{{qdd.lugar | capitalize}}</h2>
+        
+      </div>
+
+      <div class="item item-body">
+       <div ng-if = "qdd.descripcion != 'none'">
+        <h3>Descripcion</h3>
+        <p>{{qdd.descripcion}}</p>
+       </div>
+        <p><a href="#" class="subdued">Creado por {{qdd.name}}</a></p>
+        <div class="item item-divider">Asistentes</div>
+         <ion-list ng-controller="UsersQddCtrl">
+          <ion-item ng-repeat="userinvited in usersinvited" class="item item-avatar">
+            
+             
+                <img src="img/avatar.jpg">
+                <h2>{{userinvited.name}}</h2>
+                <div ng-switch on={{userinvited.status}}>
+                  <h4 ng-switch-when="5" class="royal">Creador {{userinvited.date_updated | dateToISO | date:'dd-MM-yyyy HH:mm'}}</h4>
+                  <h4 ng-switch-when="0" class="energized">Pendiente, añadido el {{userinvited.date_updated | dateToISO | date:'dd-MM-yyyy HH:mm'}}</h4>
+                  <h4 ng-switch-when="1" class="balanced">Confirmado el {{userinvited.date_updated | dateToISO | date:'dd-MM-yyyy HH:mm'}}</h4>
+                  <h4 ng-switch-when="2" class="assertive">No asistirá {{userinvited.date_updated | dateToISO | date:'dd-MM-yyyy HH:mm'}}</h4>
+                </div>
+             
+            
+          </ion-item>
+        </ion-list>
+        <p>
+          <a href="#" class="subdued">Asistirán {{qdd.users_left}} / {{qdd.maxusers}}</a>
+          <a href="#" class="subdued">5 Comentarios</a>
+        </p>
+      </div>
+
+  <div class="item tabs tabs-secondary tabs-icon-left">
+    <a ng-if = "qdd.iduser != loggeduser.id" class="tab-item" ng-controller = "UsersQddCtrl" ng-click="adduser({{qdd}})">
+      <i class="calm icon ion-thumbsup"></i>
+      ¡Me apunto!
+    </a>
+    <a class="tab-item" href="#">
+      <i class="calm icon ion-chatbox"></i>
+      Comentar
+    </a>
+    <a class="tab-item" ng-click="shareAnywhere()">
+      <i class="calm icon ion-share"></i>
+      Compartir
+    </a>
+  </div>
+
+</div>
+  </ion-content>
+   
+</ion-view>

@@ -1,0 +1,44 @@
+<ion-view view-title="Quedadas">
+   <ion-content class="has-header">
+  	
+    <ion-list ng-controller="ActiveQddCtrl">
+      <ion-item ng-repeat="activeqdd in activeqdds" class="list card" style="padding-right: 0px;">
+       
+        
+            <div class="item item-avatar"  ng-click="verqdd({{activeqdd}})">
+            
+              <img ng-src="img/sports/{{activeqdd.picture}}">
+              <h2 class="royal">{{activeqdd.sport | capitalize}}</h2>
+              <h2><i class="icon ion-clock">&nbsp;&nbsp;</i>{{activeqdd.fecha | dateToISO | date:'dd-MM-yyyy'}} {{activeqdd.hora}}</h2>
+              <h3 class="positive">{{activeqdd.lugar | capitalize}}</h3>
+            
+              <p class="subdued">Creado por {{activeqdd.name}}</p>
+              <p class="subdued">Asistirán {{activeqdd.users_left}} / {{activeqdd.maxusers}} </p>
+            </div>
+          
+       
+      </ion-item>
+    </ion-list>
+
+    <ion-list ng-controller="ActiveQddCtrlforUser">
+      <ion-item ng-repeat="activeqddfu in activeqddsforuser" class="list card">
+       
+        
+            <div class="item item-avatar" ng-click="test({{activeqddfu}})">
+            
+              <img ng-src="img/sports/{{activeqddfu.picture}}">
+              <h2>{{activeqddfu.fecha | dateToISO | date:'dd-MM-yyyy'}} {{activeqddfu.hora}}</h2>
+              <h3 class="positive">{{activeqddfu.lugar | capitalize}}</h3>
+            
+              <p class="subdued">Creado por {{activeqddfu.name}}</p>
+              <p class="subdued">Asistirán {{activeqddfu.users_left}} / {{activeqddfu.maxusers}} </p>
+            </div>
+          
+        
+      </ion-item>
+    </ion-list>
+  
+
+  </ion-content>
+  
+</ion-view>

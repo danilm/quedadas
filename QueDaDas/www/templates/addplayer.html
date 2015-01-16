@@ -1,0 +1,51 @@
+<ion-view title="Deportes">
+  
+  <ion-content class="has-header">
+    <ion-list>
+      <ion-item>
+        <div class="item item-thumbnail-left">
+          <img ng-src="img/sports/{{qdd.selectedSport.picture}}"> 
+          <h2>{{qdd.selectedSport.sport}}</h2>
+          <h2>{{qdd.lugar}}</h2>
+          <p>{{qdd.fecha}} {{qdd.hora}}</p>
+          
+        </div>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+      <ion-item>
+       <div class="item item-divider">Invitados</div>
+        <div class="list card">
+          <div class="item item-avatar">
+            <img src="img/avatar.jpg">
+            <h2>Agata</h2>
+            <h3 class="balanced">Confirmado</h3>
+          </div>
+          <div class="item item-avatar">
+            <img src="img/avatar.jpg">
+            <h2>Toni</h2>
+            <h3 class="energized">Pendiente</h3>
+          </div>
+          <div class="item item-avatar">
+            <img src="img/avatar.jpg">
+            <h2>David</h2>
+            <h3 class="assertive">No asistirá</h3>
+          </div>
+          <div class="list">
+            <a class="item item-icon-left"  href="#/app/addfriends"><i class="icon ion-person-add"></i>Invitar</a>
+            
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+    <div class="list box">
+      <button class="button button-block button-assertive" type="submit">
+        Cancelar Quedada
+      </button>
+      <button class="button button-block button-balanced" ng-click="EndQdd()">
+        Finalizar Quedada
+      </button>
+    </div>
+  </ion-content>
+</ion-view>

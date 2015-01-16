@@ -1,0 +1,57 @@
+<ion-view title="Nueva Quedada">
+  <ion-content class="has-header">
+  <form ng-submit="CreateQdd(qdd)">
+  <input type="hidden" name="idsuer" ng-model="qdd.iduser" value="1"/>
+  <div class="row responsive-sm">
+    <div class="col col-50 col-offset-25">
+    <div class="list box">
+    
+      <label class="item item-input item-select item-divider">
+      <div class="input-label"><strong>Deporte</strong></div>
+      <select ng-model="qdd.selectedSport" ng-options="sport.sport for sport in sports" name="selectedSport" class="ng-valid ng-dirty close-left"></select>
+        </label>
+    
+    </div>
+    <div class="list box">
+      <div class="item item-divider">Fecha/Hora</div>
+        <div class="item item-input">
+        <label>Fecha &nbsp;&nbsp;</label>
+          <input type="date" ng-model="qdd.fecha" required="required" value="{{qdd.fechaactual | dateToISO | date:'dd-MM-yyyy'}}" />
+       </div>
+       <div class="item item-input">
+       <label>Hora &nbsp;&nbsp;</label>
+          <input type="time" ng-model="qdd.hora" required="required"/>
+        </div>
+      </div>
+      <div class="list box">
+      <div class="item item-divider">Lugar</div>
+        <div class="item item-input">
+          <input type="text" name="lugar" ng-model="qdd.lugar" placeholder="Direccion completa, corta, número de pista..." required="required"/>
+       
+        </div>
+      </div>
+      <div class="list box">
+      <div class="item item-divider">Asistentes</div>
+        <div class="item item-input">
+          <input type="number" ng-model="qdd.maxusers" placeholder="Número de asistentes para poder jugar (0, sin número)..." required="required" value="{{qdd.maxusers}}" name="maxusers"/>
+       
+        </div>
+      </div>
+      <div class="list box">
+      <div class="item item-divider">Descripcion (opcional)</div>
+        <div class="item item-input">
+          <input type="text" name="descripcion" ng-model="qdd.descripcion" placeholder="Añadir descripcion para ampliar la quedada (preguntar por alguien, precio de la pista...)"/>
+       
+        </div>
+      </div>
+      <div class="list box">
+      <button class="button button-block button-positive" type="submit">
+        Añadir Quedada
+      </button>
+    </div>
+    </div>
+    </div>
+  </form>
+    </ion-content>
+  
+</ion-view>

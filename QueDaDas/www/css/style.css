@@ -1,0 +1,666 @@
+.ionic .balanced, .ionic a.balanced {
+color: #66cc33;
+}
+
+.logo-container {
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+background-color: transparent;
+background-image: url('../img/logo.png');
+border: 1px solid #e5e5e5;
+-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+width: 35%;
+height: 35%;
+margin: 5% auto 25px auto;
+}
+/*background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+background-color: transparent;
+background-image: url('../img/logo.png');
+width: 25%;
+height: 15%;
+margin: 25% auto 25px auto;*/
+
+.profile-widget .image-container {
+background-size: cover;
+background-position: center;
+padding: 190px 0 10px;
+}
+
+.bg2 {
+background-image: url('../img/backgrounds/bg2.jpg');
+}
+
+/** Styling for the username field **/
+label.item.has-error {  
+  border-bottom: 2px solid red;
+}
+
+/** Styling for the password field when an error exists**/
+label.item.has-error-lr {  
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+}
+
+/** Styling for the password field when an error has been resolved**/
+label.item.valid-lr {  
+  border-left: 2px solid green;
+  border-right: 2px solid green;
+}
+
+/** Styling for the error text and container **/
+.form-errors {
+  margin: 5px 0
+}
+.form-error {
+  padding: 2px 0 2px 16px;
+  color: red;
+}
+
+/*
+	login
+*/
+.main-login-page, .signup-page {
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /*background-color: #383a4c; */}
+  .main-login-page .slogan, .signup-page .slogan {
+    color: #556a78;
+    font-weight: 400;
+    line-height: 21px;
+    margin: 50px auto;
+    font-size: 15px;
+    width: 88%;
+    letter-spacing: 0.25px; }
+  .main-login-page .logo, .signup-page .logo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    background-image: url('../img/logo.png');
+    width: 45%;
+    height: 30%;
+    margin: 1% auto 0px auto; }
+  .main-login-page .pseudo-link, .signup-page .pseudo-link {
+    color: #0185a2;
+    font-size: 15px;
+    text-decoration: none; }
+  .main-login-page .list, .signup-page .list {
+    width: 88%;
+    margin: 1% auto 30px auto; }
+    .main-login-page .list label.lock:after, .signup-page .list label.lock:after {
+      content: "";
+      background: url('../img/lock_darkui.png');
+      width: 22px;
+      height: 22px;
+      display: block;
+      background-repeat: no-repeat;
+      top: 14px;
+      position: absolute;
+      background-position: center;
+      margin: 0 0 0 9%;
+      background-size: contain;
+      left: -22px; }
+    .main-login-page .list label.username:after, .signup-page .list label.username:after {
+      content: "";
+      background: url('../img/user_darkui.png');
+      width: 20px;
+      height: 20px;
+      display: block;
+      background-repeat: no-repeat;
+      top: 14px;
+      position: absolute;
+      background-position: center;
+      margin: 0 0 0 9%;
+      background-size: contain;
+      left: -22px; }
+    .main-login-page .list label.email:after, .signup-page .list label.email:after {
+      content: "";
+      background: url('../img/email_darkui.png');
+      width: 20px;
+      height: 20px;
+      display: block;
+      background-repeat: no-repeat;
+      top: 14px;
+      position: absolute;
+      background-position: center;
+      margin: 0 0 0 9%;
+      background-size: contain;
+      left: -22px; }
+    .main-login-page .list label.item-input, .signup-page .list label.item-input {
+      padding: 10px 0 4px 45px;
+      background: transparent;
+      border-width: 0 0 1px 0;
+      border-style: solid;
+      border-color: #606170; }
+      .main-login-page .list label.item-input ::-webkit-input-placeholder, .signup-page .list label.item-input ::-webkit-input-placeholder {
+        color: #acadb5; }
+      .main-login-page .list label.item-input :-moz-placeholder, .signup-page .list label.item-input :-moz-placeholder {
+        /* Firefox 18- */
+        color: #acadb5; }
+      .main-login-page .list label.item-input ::-moz-placeholder, .signup-page .list label.item-input ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #acadb5; }
+      .main-login-page .list label.item-input :-ms-input-placeholder, .signup-page .list label.item-input :-ms-input-placeholder {
+        color: #acadb5; }
+      .main-login-page .list label.item-input input[type="text"], .main-login-page .list label.item-input input[type="password"], .signup-page .list label.item-input input[type="text"], .signup-page .list label.item-input input[type="password"] {
+        font-size: 16px;
+        color: #444;
+        letter-spacing: 0.5px; }
+  .main-login-page .button, .main-login-page .button, .signup-page .button, .signup-page .button {
+    width: 88%;
+    height: 56px;
+    margin: 5px auto;
+    position: relative;
+    padding: 0;
+    background-position: cover;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    z-index: 2; }
+    .main-login-page .button.button-signin, .main-login-page .button-signin.button, .signup-page .button.button-signin, .signup-page .button-signin.button {
+      text-align: center;
+      margin-bottom: 15px; }
+    .main-login-page .button.button-twitter, .main-login-page .button-twitter.button, .signup-page .button.button-twitter, .signup-page .button-twitter.button {
+      padding: 0 0 0 12%; }
+      .main-login-page .button.button-twitter:before, .main-login-page .button-twitter.button:before, .signup-page .button.button-twitter:before, .signup-page .button-twitter.button:before {
+        content: "";
+        width: 20%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        background: #319bea; }
+      .main-login-page .button.button-twitter:after, .main-login-page .button-twitter.button:after, .signup-page .button.button-twitter:after, .signup-page .button-twitter.button:after {
+        content: "";
+        background: url('../img/twitter-icon.png');
+        width: 25px;
+        height: 25px;
+        display: block;
+        background-repeat: no-repeat;
+        top: 25%;
+        position: absolute;
+        background-position: center;
+        margin: 0 0 0 9%;
+        background-size: contain;
+        opacity: 0.3; }
+    .main-login-page .button.button-instagram, .main-login-page .button-instagram.button, .signup-page .button.button-instagram, .signup-page .button-instagram.button {
+      padding: 0 0 0 12%; }
+      .main-login-page .button.button-instagram:before, .main-login-page .button-instagram.button:before, .signup-page .button.button-instagram:before, .signup-page .button-instagram.button:before {
+        content: "";
+        width: 20%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        background: #39688d; }
+      .main-login-page .button.button-instagram:after, .main-login-page .button-instagram.button:after, .signup-page .button.button-instagram:after, .signup-page .button-instagram.button:after {
+        content: "";
+        background: url('../img/instagram-icon.png');
+        width: 30px;
+        height: 30px;
+        display: block;
+        background-repeat: no-repeat;
+        top: 25%;
+        position: absolute;
+        background-position: center;
+        margin: 0 0 0 9%;
+        background-size: contain;
+        opacity: 0.3; }
+
+        /*
+	Components
+
+	extending components from ionic.app.scss
+*/
+.button.button-transparent, .button-transparent.button, .button.button-signin, .button.button-twitter, .button.button-facebook, .button.button-instagram, .button.button-green, .button.button-red, .button.button-blue, .button.button-signin, .button-signin.button, .button.button-twitter, .button-twitter.button, .button.button-facebook, .button-facebook.button, .button.button-instagram, .button-instagram.button, .button.button-green, .button-green.button, .button.button-red, .button-red.button, .button.button-blue, .button-blue.button {
+  border-color: transparent;
+  background-color: transparent;
+  color: #fff;
+  padding: 3px 12px;
+  background-image: url('../img/button-transparent-bg.png'); }
+  .button.button-transparent:hover, .button-transparent.button:hover, .button.button-signin:hover, .button.button-twitter:hover, .button.button-facebook:hover, .button.button-instagram:hover, .button.button-green:hover, .button.button-red:hover, .button.button-blue:hover, .button.button-signin:hover, .button-signin.button:hover, .button.button-twitter:hover, .button-twitter.button:hover, .button.button-facebook:hover, .button-facebook.button:hover, .button.button-instagram:hover, .button-instagram.button:hover, .button.button-green:hover, .button-green.button:hover, .button.button-red:hover, .button-red.button:hover, .button.button-blue:hover, .button-blue.button:hover {
+    color: #fff;
+    text-decoration: none; }
+  .button.button-transparent.active, .button-transparent.active.button, .active.button.button-signin, .active.button.button-twitter, .active.button.button-facebook, .active.button.button-instagram, .active.button.button-green, .active.button.button-red, .active.button.button-blue, .button.active.button-signin, .active.button-signin.button, .button.active.button-twitter, .active.button-twitter.button, .button.active.button-facebook, .active.button-facebook.button, .button.active.button-instagram, .active.button-instagram.button, .button.active.button-green, .active.button-green.button, .button.active.button-red, .active.button-red.button, .button.active.button-blue, .active.button-blue.button, .button.button-transparent.activated, .button-transparent.activated.button, .activated.button.button-signin, .activated.button.button-twitter, .activated.button.button-facebook, .activated.button.button-instagram, .activated.button.button-green, .activated.button.button-red, .activated.button.button-blue, .button.activated.button-signin, .activated.button-signin.button, .button.activated.button-twitter, .activated.button-twitter.button, .button.activated.button-facebook, .activated.button-facebook.button, .button.activated.button-instagram, .activated.button-instagram.button, .button.activated.button-green, .activated.button-green.button, .button.activated.button-red, .activated.button-red.button, .button.activated.button-blue, .activated.button-blue.button {
+    border-color: transparent;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15); }
+  .button.button-transparent.button-clear, .button-transparent.button-clear.button, .button-clear.button.button-signin, .button-clear.button.button-twitter, .button-clear.button.button-facebook, .button-clear.button.button-instagram, .button-clear.button.button-green, .button-clear.button.button-red, .button-clear.button.button-blue, .button.button-clear.button-signin, .button-clear.button-signin.button, .button.button-clear.button-twitter, .button-clear.button-twitter.button, .button.button-clear.button-facebook, .button-clear.button-facebook.button, .button.button-clear.button-instagram, .button-clear.button-instagram.button, .button.button-clear.button-green, .button-clear.button-green.button, .button.button-clear.button-red, .button-clear.button-red.button, .button.button-clear.button-blue, .button-clear.button-blue.button {
+    border-color: transparent;
+    background: none;
+    box-shadow: none;
+    color: transparent; }
+  .button.button-transparent.button-icon, .button-transparent.button-icon.button, .button-icon.button.button-signin, .button-icon.button.button-twitter, .button-icon.button.button-facebook, .button-icon.button.button-instagram, .button-icon.button.button-green, .button-icon.button.button-red, .button-icon.button.button-blue, .button.button-icon.button-signin, .button-icon.button-signin.button, .button.button-icon.button-twitter, .button-icon.button-twitter.button, .button.button-icon.button-facebook, .button-icon.button-facebook.button, .button.button-icon.button-instagram, .button-icon.button-instagram.button, .button.button-icon.button-green, .button-icon.button-green.button, .button.button-icon.button-red, .button-icon.button-red.button, .button.button-icon.button-blue, .button-icon.button-blue.button {
+    border-color: transparent;
+    background: none; }
+  .button.button-transparent.button-outline, .button-transparent.button-outline.button, .button-outline.button.button-signin, .button-outline.button.button-twitter, .button-outline.button.button-facebook, .button-outline.button.button-instagram, .button-outline.button.button-green, .button-outline.button.button-red, .button-outline.button.button-blue, .button.button-outline.button-signin, .button-outline.button-signin.button, .button.button-outline.button-twitter, .button-outline.button-twitter.button, .button.button-outline.button-facebook, .button-outline.button-facebook.button, .button.button-outline.button-instagram, .button-outline.button-instagram.button, .button.button-outline.button-green, .button-outline.button-green.button, .button.button-outline.button-red, .button-outline.button-red.button, .button.button-outline.button-blue, .button-outline.button-blue.button {
+    border-color: transparent;
+    background: transparent;
+    color: transparent; }
+    .button.button-transparent.button-outline.active, .button-transparent.button-outline.active.button, .button-outline.active.button.button-signin, .button-outline.active.button.button-twitter, .button-outline.active.button.button-facebook, .button-outline.active.button.button-instagram, .button-outline.active.button.button-green, .button-outline.active.button.button-red, .button-outline.active.button.button-blue, .button.button-outline.active.button-signin, .button-outline.active.button-signin.button, .button.button-outline.active.button-twitter, .button-outline.active.button-twitter.button, .button.button-outline.active.button-facebook, .button-outline.active.button-facebook.button, .button.button-outline.active.button-instagram, .button-outline.active.button-instagram.button, .button.button-outline.active.button-green, .button-outline.active.button-green.button, .button.button-outline.active.button-red, .button-outline.active.button-red.button, .button.button-outline.active.button-blue, .button-outline.active.button-blue.button, .button.button-transparent.button-outline.activated, .button-transparent.button-outline.activated.button, .button-outline.activated.button.button-signin, .button-outline.activated.button.button-twitter, .button-outline.activated.button.button-facebook, .button-outline.activated.button.button-instagram, .button-outline.activated.button.button-green, .button-outline.activated.button.button-red, .button-outline.activated.button.button-blue, .button.button-outline.activated.button-signin, .button-outline.activated.button-signin.button, .button.button-outline.activated.button-twitter, .button-outline.activated.button-twitter.button, .button.button-outline.activated.button-facebook, .button-outline.activated.button-facebook.button, .button.button-outline.activated.button-instagram, .button-outline.activated.button-instagram.button, .button.button-outline.activated.button-green, .button-outline.activated.button-green.button, .button.button-outline.activated.button-red, .button-outline.activated.button-red.button, .button.button-outline.activated.button-blue, .button-outline.activated.button-blue.button {
+      background-color: transparent;
+      box-shadow: none;
+      color: #fff; }
+.button.button-signin, .button-signin.button {
+  background: -moz-linear-gradient(left, #0185a2 0, #66c2c8 90%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #0185a2), color-stop(90%, #66c2c8));
+  background: -webkit-linear-gradient(left, #0185a2 0, #66c2c8 90%);
+  background: -o-linear-gradient(left, #0185a2 0, #66c2c8 90%);
+  background: linear-gradient(to right, #0185a2 0, #66c2c8 90%);
+  border-color: transparent;
+  background-color: transparent;
+  color: #fff; }
+  .button.button-signin:hover, .button-signin.button:hover {
+    color: #fff;
+    text-decoration: none; }
+  .button.button-signin.active, .button-signin.active.button, .button.button-signin.activated, .button-signin.activated.button {
+    border-color: transparent;
+    background-color: #01758f;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15); }
+  .button.button-signin.activated, .button-signin.activated.button {
+    background: #01758f; }
+.button.button-twitter, .button-twitter.button {
+  border-color: transparent;
+  background-color: #55acee;
+  color: #fff;
+  background-image: none; }
+  .button.button-twitter:hover, .button-twitter.button:hover {
+    color: #fff;
+    text-decoration: none; }
+  .button.button-twitter.active, .button-twitter.active.button, .button.button-twitter.activated, .button-twitter.activated.button {
+    border-color: transparent;
+    background-color: #319bea;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15); }
+.button.button-facebook, .button-facebook.button {
+  border-color: transparent;
+  background-color: #375a9a;
+  color: #fff;
+  background-image: none; }
+  .button.button-facebook:hover, .button-facebook.button:hover {
+    color: #fff;
+    text-decoration: none; }
+  .button.button-facebook.active, .button-facebook.active.button, .button.button-facebook.activated, .button-facebook.activated.button {
+    border-color: transparent;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15); }
+.button.button-instagram, .button-instagram.button {
+  border-color: transparent;
+  background-color: #457ca9;
+  color: #fff;
+  background-image: none; }
+  .button.button-instagram:hover, .button-instagram.button:hover {
+    color: #fff;
+    text-decoration: none; }
+  .button.button-instagram.active, .button-instagram.active.button, .button.button-instagram.activated, .button-instagram.activated.button {
+    border-color: transparent;
+    background-color: #39688d;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15); }
+.button.button-green, .button-green.button {
+  border-color: transparent;
+  background-color: #88c057;
+  color: #fff;
+  background-image: none;
+  /*#648f3f*/ }
+  .button.button-green:hover, .button-green.button:hover {
+    color: #fff;
+    text-decoration: none; }
+  .button.button-green.active, .button-green.active.button, .button.button-green.activated, .button-green.activated.button {
+    border-color: transparent;
+    background-color: lime;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15); }
+.button.button-red, .button-red.button {
+  border-color: transparent;
+  background-color: #dc6263;
+  color: #fff;
+  background-image: none; }
+  .button.button-red:hover, .button-red.button:hover {
+    color: #fff;
+    text-decoration: none; }
+  .button.button-red.active, .button-red.active.button, .button.button-red.activated, .button-red.activated.button {
+    border-color: transparent;
+    background-color: red;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15); }
+.button.button-blue, .button-blue.button {
+  border-color: transparent;
+  background-color: rgba(25, 213, 206, 0.5);
+  color: #fff;
+  background-image: none; }
+  .button.button-blue:hover, .button-blue.button:hover {
+    color: #fff;
+    text-decoration: none; }
+  .button.button-blue.active, .button-blue.active.button, .button.button-blue.activated, .button-blue.activated.button {
+    border-color: transparent;
+    background-color: #02c7c0;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15); }
+
+
+/*
+  Sidebar
+*/
+.custom-menu-item {
+  width: 100%;
+  margin: 0 auto;
+  background: transparent;
+  border: transparent;
+  letter-spacing: 0.25px;
+  text-align: center;
+  font-size: 16px; }
+  .custom-menu-item.profile-item {
+    background: #f8f8f8;
+    position: relative;
+    text-align: center;
+    border: none; }
+    .custom-menu-item.profile-item .author-info h1 {
+      font-size: 16px;
+      color: #424458;
+      letter-spacing: 1px; }
+  .custom-menu-item.settings-item:after {
+    content: "";
+    background: url('../img/settings-icon.png');
+    width: 14px;
+    height: 14px;
+    display: block;
+    background-repeat: no-repeat;
+    top: 50%;
+    position: absolute;
+    background-position: center;
+    margin: -7px 0 0 25%;
+    background-size: contain; }
+  .custom-menu-item.messages-item:after {
+    content: "";
+    background: url('../img/messages-icon.png');
+    width: 14px;
+    height: 14px;
+    display: block;
+    background-repeat: no-repeat;
+    top: 50%;
+    position: absolute;
+    background-position: center;
+    margin: -7px 0 0 25%;
+    background-size: contain; }
+  .custom-menu-item.users-item:after {
+    content: "";
+    background: url('../img/group_user-icon.png');
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-repeat: no-repeat;
+    top: 50%;
+    position: absolute;
+    background-position: center;
+    margin: -13px 0 0 25%;
+    background-size: contain; }
+  .custom-menu-item.threads-item:after {
+    content: "";
+    background: url('../img/group.png');
+    width: 14px;
+    height: 14px;
+    display: block;
+    background-repeat: no-repeat;
+    top: 50%;
+    position: absolute;
+    background-position: center;
+    margin: -7px 0 0 25%;
+    background-size: contain; }
+  .custom-menu-item .item-content {
+    padding: 20px 15px 20px 15px;
+    background-color: transparent;
+    color: #fff; }
+    .custom-menu-item .item-content.activated {
+      background: rgba(0, 0, 0, 0.5); }
+
+.author-icon-row {
+  position: relative;
+  margin-top: 3px;
+  margin-bottom: 96px;
+  background-color: #ffffff;
+  width: 100%; }
+
+.author-icon-row span {
+  display: inline-block;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #e6e6e6;
+  position: absolute;
+  left: 50%;
+  margin-left: -38px;
+  background-position: center center;
+  background-size: cover; }
+
+  /*
+	profile
+*/
+.profile-page {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff; }
+  .profile-page.edit-profile-page .profile-menu-wrapper {
+    background: #ffffff;
+    position: relative;
+    height: inherit;
+    z-index: 2; }
+    .profile-page.edit-profile-page .profile-menu-wrapper .list label.item-input .input-label {
+      color: #49799a;
+      padding: 4px 0 4px 8px; }
+    .profile-page.edit-profile-page .profile-menu-wrapper .list label.item-input input[type="text"], .profile-page.edit-profile-page .profile-menu-wrapper .list label.item-input input[type="password"] {
+      font-size: 16px;
+      letter-spacing: 0.5px; }
+    .profile-page.edit-profile-page .profile-menu-wrapper .button-submit {
+      margin: 5px auto;
+      width: 88%; }
+  .profile-page .profile-img-wrapper {
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #07b9d9; }
+    .profile-page .profile-img-wrapper.edit-profile {
+      height: inherit; }
+      .profile-page .profile-img-wrapper.edit-profile .avatar-section {
+        padding: 0; }
+        .profile-page .profile-img-wrapper.edit-profile .avatar-section .content .avatar-icon {
+          min-height: 170px; }
+        .profile-page .profile-img-wrapper.edit-profile .avatar-section .content button {
+          border: none;
+          color: #fff;
+          font-size: 14px;
+          z-index: 2; }
+          .profile-page .profile-img-wrapper.edit-profile .avatar-section .content button.edit-bg {
+            background: rgba(233, 49, 77, 0.8); }
+          .profile-page .profile-img-wrapper.edit-profile .avatar-section .content button.button.edit-avatar, .profile-page .profile-img-wrapper.edit-profile .avatar-section .content button.edit-avatar.button {
+            background: rgba(233, 49, 77, 0.8);
+            top: 0%;
+            right: -16px;
+            width: 29px;
+            height: 29px;
+            border: none; }
+            .profile-page .profile-img-wrapper.edit-profile .avatar-section .content button.button.edit-avatar:after, .profile-page .profile-img-wrapper.edit-profile .avatar-section .content button.edit-avatar.button:after {
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-color: transparent;
+              position: absolute;
+              content: ' ';
+              
+              width: 15px;
+              height: 15px;
+              top: 25%;
+              left: 25%; }
+    .profile-page .profile-img-wrapper:before {
+      content: '\a';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      z-index: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #000000;
+      
+      opacity: 0.4; }
+    .profile-page .profile-img-wrapper .slider {
+      height: 100%; }
+    .profile-page .profile-img-wrapper .slider-pager {
+      bottom: 7px; }
+      .profile-page .profile-img-wrapper .slider-pager i.icon.ion-record {
+        font-size: 10px; }
+    .profile-page .profile-img-wrapper .slider-slide {
+      text-align: center; }
+    .profile-page .profile-img-wrapper .avatar-section {
+      width: 100%;
+      display: table;
+      text-align: center;
+      margin: 0px auto;
+      padding: 0 0 25px 0;
+      vertical-align: middle;
+      height: inherit;
+      position: relative;
+      z-index: 2; }
+      .profile-page .profile-img-wrapper .avatar-section.avatar-bio-section:after {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        content: '';
+        background: rgba(0, 0, 0, 0.5); }
+      .profile-page .profile-img-wrapper .avatar-section .content {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%; }
+        .profile-page .profile-img-wrapper .avatar-section .content .avatar-icon {
+          padding: 9% 0 0 0;
+          position: relative; }
+          .profile-page .profile-img-wrapper .avatar-section .content .avatar-icon .avatar-img {
+            
+            display: inline-block;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border-width: 2px;
+            border-style: solid;
+            border-color: #fff;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #f3f3f3;
+            position: relative;
+            z-index: 2; }
+            .profile-page .profile-img-wrapper .avatar-section .content .avatar-icon .avatar-img:before {
+              width: 108px;
+              height: 108px;
+              border-radius: 50%;
+              border-width: 1px;
+              border-style: solid;
+              border-color: rgba(255, 255, 255, 0.5);
+              background-color: transparent;
+              position: absolute;
+              left: -12.6%;
+              top: -12.6%;
+              z-index: 0;
+              content: ''; }
+            .profile-page .profile-img-wrapper .avatar-section .content .avatar-icon .avatar-img button {
+              min-width: 32px;
+              background: none;
+              border: 1px solid rgba(255, 255, 255, 0.5);
+              min-height: 32px;
+              padding: 0;
+              position: absolute;
+              top: 0%;
+              right: -100%;
+              border-radius: 50%; }
+              .profile-page .profile-img-wrapper .avatar-section .content .avatar-icon .avatar-img button:after {
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-color: transparent;
+                position: absolute;
+                content: ' ';
+                
+                width: 15px;
+                height: 15px;
+                top: 25%;
+                left: 25%; }
+    .profile-page .profile-img-wrapper .info-section {
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      padding: 10px 0 14px 0;
+      font-size: 16px;
+      position: relative;
+      z-index: 2; }
+      .profile-page .profile-img-wrapper .info-section p {
+        width: 80%;
+        margin: 5px auto; }
+      .profile-page .profile-img-wrapper .info-section .content {
+        display: table-cell;
+        vertical-align: middle; }
+        .profile-page .profile-img-wrapper .info-section .content:after {
+          content: "";
+          background: linear-gradient(to top, rgba(0, 0, 0, 0.15) 0, transparent 100%);
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: block;
+          z-index: 0;
+          bottom: -35px; }
+      .profile-page .profile-img-wrapper .info-section h1 {
+        color: #fff;
+        font-size: 20px;
+        margin: 0; }
+      .profile-page .profile-img-wrapper .info-section h2 {
+        font-size: 16px;
+        font-weight: normal;
+        margin: 0 0 10px 0;
+        color: #fff; }
+        .profile-page .profile-img-wrapper .info-section h2.city {
+          color: rgba(255, 255, 255, 0.75);
+          font-size: 14px;
+          margin: 5px 0; }
+    .profile-page .profile-img-wrapper .follower-section {
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      position: relative;
+      z-index: 2;
+      display: inline-table;
+      border-top: 1px solid rgba(255, 255, 255, 0.25);
+      background: rgba(255, 255, 255, 0.4);
+      position: relative;
+      height: 11%;
+      padding: 5px;
+      text-align: center; }
+      .profile-page .profile-img-wrapper .follower-section span {
+        text-align: center;
+        color: #fff;
+        vertical-align: middle;
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        margin: 0;
+        display: inline-block;
+        padding: 0 10px 0px 20px; }
+        .profile-page .profile-img-wrapper .follower-section span.first {
+          padding: 0 20px 0px 10px;
+          border-right: 1px solid rgba(255, 255, 255, 0.5); }
+  .profile-page .profile-menu-wrapper {
+    background: #ffffff;
+    z-index: 2; }

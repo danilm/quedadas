@@ -1,0 +1,67 @@
+<ion-side-menus enable-menu-with-back-views="false">
+
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button></ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+   
+    <ion-content scroll="false" class="sidebar-bg">
+
+      <ion-list>
+      <ion-item class="custom-menu-item profile-item"  nav-clear menu-close href="#/app/profile">
+          <div class="author-icon-row">
+              <span ng-if = "usuario.avatar!=''" style="background-image:url({{usuario.avatar}})"></span>
+              <span ng-if = "usuario.avatar==''" style="background-image:url('img/avatar.jpg')"></span>
+          </div>
+
+          <div class="author-info centerBlock">
+                    <h1 ng-if="usuario.name">
+                      {{usuario.name}}
+                    </h1>
+                    
+                    
+          </div>
+        </ion-item>
+       <ion-item nav-clear menu-close class="item item-icon-left" href="#/app/newqdd" ng-click="newQdd()">
+          <i class="icon ion-plus-round"></i>Nueva Quedada
+        </ion-item>
+             
+        <ion-item nav-clear menu-close class="item item-icon-left" href="#/app/browse">
+          <i class="icon ion-home"></i>Quedadas Activas
+        </ion-item>
+        <ion-item nav-clear menu-close class="item item-icon-left" href="#/app/search">
+          <i class="icon ion-search"></i>Buscar
+        </ion-item>
+        <ion-item nav-clear menu-close class="item item-icon-left" href="#/app/sports">
+           <i class="icon ion-clipboard"></i>Listado Categorias
+        </ion-item>
+        <ion-item nav-clear menu-close class="item item-icon-left" href="#/app/friends">
+          <i class="icon ion-person-stalker"></i>
+            Amigos
+          <span class="badge badge-assertive">0</span>
+        </ion-item>
+        <ion-item nav-clear menu-close class="item item-icon-left" href="#/app/groups">
+          <i class="icon ion-chatboxes"></i>
+            Grupos
+          <span class="badge badge-assertive">0</span>
+        </ion-item>
+        <ion-item class="item item-divider"> Usuario
+        </ion-item>
+        <ion-item nav-clear menu-close class="item item-icon-left" href="#/app/profile">
+           <i class="icon ion-gear-a"></i>Perfil
+        </ion-item>
+        <ion-item nav-clear menu-close class="item item-icon-left" ng-click="logout()">
+           <i class="icon ion-log-out"></i>Logout
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
